@@ -1,0 +1,4 @@
+.navBar .navList .navItem:not(:last-child) {
+    margin-right: 0;
+    margin-left: 72px;
+}

@@ -1,0 +1,207 @@
+/* Intre Section START */
+.introSection {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    background-image: url(../media/img/city.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 134px;
+}
+
+.introSection .header {
+    display: flex;
+    align-items: center;
+    padding: 46px 100px 0;
+}
+
+.introSection .header .headerLogo {
+    width: 66px;
+    height: 50px;
+}
+
+.introSection .header .headerLogo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.navBar {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 72px;
+}
+
+.navBar .navList {
+    display: flex;
+    align-items: center;
+}
+
+.navBar .navList .navItem:not(:last-child) {
+    margin-right: 72px;
+}
+
+.navBar .navList .navItem .navLink {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--fontPrimary);
+    color: #D6D6D6;
+    transition: color 180ms ease-out
+}
+
+.navBar .navList .navItem .navLink:hover {
+    color: #fff;
+}
+
+.languageDropdown {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-right: 36px;
+    position: relative;
+}
+
+.languageDropdown .languageOption {
+    width: 30px;
+    height: 30px;
+    background-image: url('../media/img/flagSprite.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+}
+
+.languageDropdown .languageOption.hy {
+    background-position-y: 0;
+}
+
+.languageDropdown .languageOption.ru {
+    background-position-y: -30px;
+}
+
+.languageDropdown .languageOption.en {
+    background-position-y: -60px;
+}
+
+.languageList {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    padding: 8px 0;
+    transform: scaleY(0);
+    transition: transform 180ms ease-out;
+    transform-origin: top;
+}
+
+.languageList .languageOption:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.languageDropdown:hover .languageList {
+    transform: scaleY(1);
+}
+
+.donateBtn {
+    width: 126px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 16px;
+    font-family: var(--fontPrimary);
+    text-transform: uppercase;
+    color: var(--accentForeground);
+    background-color: var(--accentBackground);
+    transition: background-color 180ms ease-out;
+}
+
+.donateBtn:hover {
+    background-color: var(--accentBackgroundHover);
+}
+
+.downloadBtnWrapper {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    padding-left: 70px;
+}
+
+.downloadBtn {
+    display: flex;
+    align-items: center;
+    font-family: var(--fontSecondary);
+    font-size: 20px;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 180ms background-color;
+    color: var(--accentForeground);
+    background-color: var(--accentBackground);
+}
+
+.downloadBtn:first-child {
+    margin-right: 50px;
+}
+
+.downloadBtn:hover {
+    background-color: var(--accentBackgroundHover);
+}
+
+.downloadBtn img {
+    width: 35px;
+    height: 35px;
+    margin-right: 16px;
+}
+
+.introStatsWrapper {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    border-radius: 10px;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+    font-family: var(--fontSecondary);
+}
+
+.statsType {
+    width: 300px;
+    padding: 24px 24px 44px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.statsType:not(:last-child) {
+    position: relative;
+}
+
+.statsType:not(:last-child):before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 100%;
+    width: 1px;
+    background-color: #000;
+    height: calc(100% - 32px);
+    transform: translateY(16px);
+}
+
+.statsValue {
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+.statsName {
+    color: #000;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+/* Intre Section END */

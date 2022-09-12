@@ -1,0 +1,13 @@
+:root {
+    /*  Colors  */
+    --accentBackground: #31D0DB;
+    --accentForeground: #fff;
+
+    --accentBackgroundHover: #20BDC8;
+
+    --color-1: #D6D6D6;
+
+    /* Fonts */
+    --fontPrimary: 'Rubik', sans-serif;
+    --fontSecondary: 'Segoe UI', sans-serif;
+}
