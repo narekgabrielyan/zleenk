@@ -2,4 +2,6 @@
 @import url('./reset.css');
 @import url('./helpers.css');
 @import url('./variables.css');
-@import url('./main.css');
+@import url('./typography.css');
+@import url('./modules.css');
+@import url('./sections.css');

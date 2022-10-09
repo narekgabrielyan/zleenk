@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport"
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
         <link rel="stylesheet" href="./src/assets/styles/all.css">
@@ -18,7 +18,7 @@
                     <nav class="navBar flexGrow">
                         <ul class="navList">
                             <li class="navItem">
-                                <a href="#" class="navLink">app</a>
+                                <a href="#appSectionHeader" class="navLink">app</a>
                             </li>
                             <li class="navItem">
                                 <a href="#" class="navLink">team</a>
@@ -68,6 +68,34 @@
                     </div>
                 </div>
             </section>
+            <section class="appSection">
+                <h1 class="sectionHeader" id="appSectionHeader">App</h1>
+                <div class="slider glide">
+                    <div class="sliderWrapper glide__track" data-glide-el="track">
+                        <ul class="sliderPanel glide__slides">
+                            <li class="sliderItem"></li>
+                            <li class="sliderItem"></li>
+                            <li class="sliderItem"></li>
+                            <li class="sliderItem"></li>
+                            <li class="sliderItem"></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
+        <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+        <script>
+            new Glide('.glide', {
+                type: 'carousel',
+                perView: 5,
+                focusAt: 'center',
+                gap: 22,
+                classes: {
+                    slider: 'sliderItem',
+                    activeSlide: 'active',
+                }
+            }).mount();
+
+        </script>
     </body>
 </html>
