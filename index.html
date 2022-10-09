@@ -83,5 +83,19 @@
                 </div>
             </section>
         </div>
+        <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+        <script>
+            new Glide('.glide', {
+                type: 'carousel',
+                perView: 5,
+                focusAt: 'center',
+                gap: 22,
+                classes: {
+                    slider: 'sliderItem',
+                    activeSlide: 'active',
+                }
+            }).mount();
+
+        </script>
     </body>
 </html>
