@@ -1,0 +1,49 @@
+.appSection {
+    padding: 240px 100px 100px;
+}
+
+.appSectionSlider {
+    width: 100%;
+    position: relative;
+}
+
+.appSectionSlider:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 40%;
+}
+
+.appSectionSlider .glide__track {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.appSectionSlider .glide__slides {
+    height: 100%;
+    padding: 10px 0;
+}
+
+.appSectionSlider .glide__slide {
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url('../../media/img/sliderImages/screen.png');
+    background-size: 100% 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.appSectionSlider:after {
+    content: "";
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("../../media/img/sliderImages/phone_frame.png");
+    background-size: 100% 100%;
+}

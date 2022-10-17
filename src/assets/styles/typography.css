@@ -1,3 +1,7 @@
-.sectionHeader {
+.sectionHeading {
     font-family: var(--fontSecondary);
+    font-weight: 400;
+    font-size: 48px;
+    padding-bottom: 80px;
+    text-align: center;
 }
