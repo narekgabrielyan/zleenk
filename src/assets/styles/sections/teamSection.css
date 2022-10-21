@@ -1,0 +1,70 @@
+.teamSection {
+    padding: 100px 0;
+}
+
+.teamSectionSlider .glide__track {
+    height: 300px;
+}
+
+.teamSectionSlider .glide__slides {
+    height: 100%;
+    padding: 0 100px;
+}
+
+.teamSectionSlider .glide__slide {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../../media/img/sections/team/sliderImages/slider_image.png");
+}
+
+.teamSectionSlider .slideContentWrapper {
+    position: absolute;
+    width: calc(100% - 10px);
+    left: 50%;
+    top: 100%;
+    padding: 4px;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 350ms ease-in-out;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(135deg, rgba(0, 255, 255, 0.3), rgba(128, 0, 128, 0.1));
+}
+
+.teamSectionSlider .slideContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 6px;
+    padding: 12px 20px 20px;
+    font-family: var(--fontTernary);
+    color: var(--accentForeground);
+    background-image: linear-gradient(126deg, rgba(255, 255, 255, 0.6) 3%, rgba(255, 255, 255, 0.3) 76%);
+}
+
+.teamSectionSlider .glide__slide:hover .slideContentWrapper {
+    transform: translateX(-50%) translateY(-100%);
+}
+
+.teamSectionSlider .teamMemberName {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.teamSectionSlider .teamMemberRole {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 2px;
+}
+
+.teamSectionSlider .teamMemberQuote {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+}

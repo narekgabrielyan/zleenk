@@ -1,123 +1,164 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
-        <link rel="stylesheet" href="./src/assets/styles/all.css">
-    </head>
-    <body>
-        <div id="root">
-            <section class="introSection">
-                <header class="header">
-                    <div class="headerLogo">
-                        <img src="src/assets/media/svg/logo_sm.svg" alt="Zleenk Logo">
-                    </div>
-                    <nav class="navBar flexGrow">
-                        <ul class="navList">
-                            <li class="navItem">
-                                <a href="#" class="navLink">app</a>
-                            </li>
-                            <li class="navItem">
-                                <a href="#" class="navLink">team</a>
-                            </li>
-                            <li class="navItem">
-                                <a href="#" class="navLink">partners</a>
-                            </li>
-                            <li class="navItem">
-                                <a href="#" class="navLink">join</a>
-                            </li>
-                            <li class="navItem">
-                                <a href="#" class="navLink">about us</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="languageDropdown pointer">
-                        <span class="selectedLanguage languageOption en"></span>
-                        <div class="languageList">
-                            <span class="languageOption ru"></span>
-                            <span class="languageOption hy"></span>
-                        </div>
-                    </div>
-                    <button class="donateBtn pointer">donate</button>
-                </header>
-                <div class="downloadBtnWrapper">
-                    <button class="downloadBtn appstore">
-                        <img src="./src/assets/media/img/app-store.png" alt="">
-                        AppStore
-                    </button>
-                    <button class="downloadBtn googleplay">
-                        <img src="./src/assets/media/img/google-play.png" alt="">
-                        GooglePlay
-                    </button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/assets/styles/all.css">
+</head>
+<body>
+<div id="root">
+    <section class="introSection" id="introSection">
+        <header class="header">
+            <div class="headerLogo">
+                <img src="src/assets/media/svg/logo_sm.svg" alt="Zleenk Logo">
+            </div>
+            <nav class="navBar flexGrow">
+                <ul class="navList">
+                    <li class="navItem">
+                        <a href="#appSection" class="navLink">app</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#teamSection" class="navLink">team</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#" class="navLink">partners</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#" class="navLink">join</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#aboutSection" class="navLink">about us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="languageDropdown pointer">
+                <span class="selectedLanguage languageOption en"></span>
+                <div class="languageList">
+                    <span class="languageOption ru"></span>
+                    <span class="languageOption hy"></span>
                 </div>
-                <div class="introStatsWrapper">
-                    <div class="statsType">
-                        <span class="statsValue">1500</span>
-                        <span class="statsName">users</span>
-                    </div>
-                    <div class="statsType">
-                        <span class="statsValue">1500</span>
-                        <span class="statsName">live lessons</span>
-                    </div>
-                    <div class="statsType">
-                        <span class="statsValue">1500</span>
-                        <span class="statsName">video courses</span>
-                    </div>
+            </div>
+            <button class="donateBtn pointer">donate</button>
+        </header>
+        <div class="downloadBtnWrapper">
+            <button class="downloadBtn appstore">
+                <img src="./src/assets/media/img/app-store.png" alt="">
+                AppStore
+            </button>
+            <button class="downloadBtn googleplay">
+                <img src="./src/assets/media/img/google-play.png" alt="">
+                GooglePlay
+            </button>
+        </div>
+        <div class="introStatsWrapper">
+            <div class="statsType">
+                <span class="statsValue">1500</span>
+                <span class="statsName">users</span>
+            </div>
+            <div class="statsType">
+                <span class="statsValue">1500</span>
+                <span class="statsName">live lessons</span>
+            </div>
+            <div class="statsType">
+                <span class="statsValue">1500</span>
+                <span class="statsName">video courses</span>
+            </div>
+        </div>
+    </section>
+    <section class="appSection" id="appSection">
+        <div class="appSectionHeading sectionHeading">App</div>
+        <div class="glide appSectionSlider">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide"></li>
+                    <li class="glide__slide"></li>
+                    <li class="glide__slide"></li>
+                    <li class="glide__slide"></li>
+                    <li class="glide__slide"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="aboutSection" id="aboutSection">
+        <div class="aboutSectionHeading sectionHeading">About Us</div>
+        <div class="aboutSectionContent">
+            <div class="aboutSectionImages">
+                <div class="aboutImg"></div>
+                <div class="aboutImg"></div>
+                <div class="aboutImg"></div>
+            </div>
+            <div class="aboutSectionSliderWrapper">
+                <div class="aboutSectionSliderHeading">
+                    Story
                 </div>
-            </section>
-            <section class="appSection">
-                <div class="appSectionHeading sectionHeading">App</div>
-                <div class="glide appSectionSlider">
-                    <div class="glide__track" data-glide-el="track">
-                      <ul class="glide__slides">
-                        <li class="glide__slide"></li>
-                        <li class="glide__slide"></li>
-                        <li class="glide__slide"></li>
-                        <li class="glide__slide"></li>
-                        <li class="glide__slide"></li>
-                      </ul>
+                <div class="aboutSectionSlider splide" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide">1 Zleenk was founded started its activity in June 2021 in order to enable every schoolchild to self-educate, self-develop and self-discover.
+                                Today, a number of talented schoolchildren sometimes do not have the opportunity to develop their talent, skills, motivation due to various problems, which may include family, school, friends, environment. We have come to make education interesting, accessible and desirable.</li>
+                              <li class="splide__slide">2 Zleenk was founded started its activity in June 2021 in order to enable every schoolchild to self-educate, self-develop and self-discover.
+                                Today, a number of talented schoolchildren sometimes do not have the opportunity to develop their talent, skills, motivation due to various problems, which may include family, school, friends, environment. We have come to make education interesting, accessible and desirable.</li>
+                              <li class="splide__slide">3 Zleenk was founded started its activity in June 2021 in order to enable every schoolchild to self-educate, self-develop and self-discover.
+                                Today, a number of talented schoolchildren sometimes do not have the opportunity to develop their talent, skills, motivation due to various problems, which may include family, school, friends, environment. We have come to make education interesting, accessible and desirable.</li>
+                          </ul>
                     </div>
                   </div>
-            </section>
-            <section class="aboutSection">
-                <div class="aboutSectionHeading sectionHeading">About Us</div>
-                <div class="aboutSectionContent">
-                    <div class="aboutSectionImages">
-                        <div class="aboutImg"></div>
-                        <div class="aboutImg"></div>
-                        <div class="aboutImg"></div>
-                    </div>
-                    <div class="aboutSectionSliderWrapper">
-                        <div class="aboutSectionSliderHeading">
-                            Story
-                        </div>
-                        <div class="aboutSectionSlider">
-                            <div class="glide__track" data-glide-el="track">
-                                <ul class="glide__slides">
-                                    <li class="glide__slide">Zleenk was founded started its activity in June 2021 in order to enable every schoolchild to self-educate, self-develop and self-discover.
-                                        Today, a number of talented schoolchildren sometimes do not have the opportunity to develop their talent, skills, motivation due to various problems, which may include family, school, friends, environment. We have come to make education interesting, accessible and desirable.</li>
-                                    <li class="glide__slide">Zleenk was founded started its activity in June 2021 in order to enable every schoolchild to self-educate, self-develop and self-discover.
-                                        Today, a number of talented schoolchildren sometimes do not have the opportunity to develop their talent, skills, motivation due to various problems, which may include family, school, friends, environment. We have come to make education interesting, accessible and desirable.</li>
-                                    <li class="glide__slide">Zleenk was founded started its activity in June 2021 in order to enable every schoolchild to self-educate, self-develop and self-discover.
-                                        Today, a number of talented schoolchildren sometimes do not have the opportunity to develop their talent, skills, motivation due to various problems, which may include family, school, friends, environment. We have come to make education interesting, accessible and desirable.</li>
-                                </ul>
-                              </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
         </div>
-        <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-        <script>
-            new Glide('.appSectionSlider', {
-                type: 'carousel',
-                focusAt: 'center',
-                gap: 22,
-                perView: 5,
-            }).mount()
-        </script>
-    </body>
+    </section>
+    <section class="teamSection" id="teamSection">
+        <div class="teamSectionHeading sectionHeading">Team</div>
+        <div class="glide teamSectionSlider">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <div class="slideContentWrapper">
+                            <div class="slideContent">
+                                <span class="teamMemberName">Diana Ghabuzyan</span>
+                                <span class="teamMemberRole">co founder</span>
+                                <span class="teamMemberQuote">“Everyone is a genius, but if you judge a fish by ability to climb a tree, it will live it’s  whole life believing that is stupid”</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide"></li>
+                    <li class="glide__slide"></li>
+                    <li class="glide__slide"></li>
+                    <li class="glide__slide"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- Glide JS -->
+<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+<!-- Splide JS -->
+<script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+<script>
+    new Glide('.appSectionSlider', {
+        type: 'carousel',
+        focusAt: 'center',
+        gap: 22,
+        perView: 5,
+    }).mount();
+
+    new Glide('.teamSectionSlider', {
+        type: 'carousel',
+        focusAt: 1,
+        gap: 90,
+        perView: 5,
+    }).mount();
+
+    new Splide( '.splide', {
+        type   : 'loop',
+        perPage: 1,
+        direction: 'ttb',
+        pagination: true,
+        arrows: false,
+        height: 396,
+    }).mount();
+</script>
+</body>
 </html>
