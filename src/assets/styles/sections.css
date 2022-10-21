@@ -1,2 +1,4 @@
-@import "sections/introSection.css";
-@import "sections/appSection.css";
+@import "./sections/introSection.css";
+@import "./sections/appSection.css";
+@import "./sections/aboutSection.css";
+@import "./sections/teamSection.css";
