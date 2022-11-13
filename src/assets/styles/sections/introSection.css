@@ -29,7 +29,7 @@
 
 .navBar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin: 0 72px;
 }
 
@@ -107,11 +107,14 @@
 }
 
 .donateBtn {
-    width: 126px;
     height: 50px;
     border-radius: 10px;
     font-weight: 800;
     font-size: 16px;
+    padding: 0 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font-family: var(--fontPrimary);
     text-transform: uppercase;
     color: var(--accentForeground);

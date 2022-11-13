@@ -1,5 +1,9 @@
 /* Desktop Small (1024 - 1440) */
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .navBar {
+        justify-content: flex-end;
+    }
+
     .navBar .navList .navItem:not(:last-child) {
         margin-right: 60px;
     }
@@ -9,7 +13,7 @@
     }
 
     .appSectionSlider .glide__slide {
-        border-radius: 8px;
+        border-radius: 12px;
     }
 
     .aboutSectionImages {
@@ -42,4 +46,84 @@
         width: 235px;
         height: 224px;
     }
+
+    .footerSection {
+        padding-bottom: 60px;
+    }
+
+    .footerInfo {
+        margin-right: 120px;
+    }
+
+    .footerAbout {
+        font-size: 20px;
+    }
+
+    .footerDownloadLinks h4 {
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+
+    .footerDownloadLinks .downloadBtnWrapper {
+        grid-gap: 40px;
+        grid-template-columns: 1fr;
+    }
+
+    .footNote {
+        font-size: 20px;
+    }
 }
+
+/* Desktop medium (1440 - 1680) */
+@media only screen and (min-width: 1440px) and (max-width: 1680px) {
+    .appSectionSlider .glide__slide {
+        border-radius: 28px;
+    }
+}
+
+/* Desktop large */
+@media only screen and (min-width: 1680px) {
+    .downloadBtn {
+        padding: 0 44px;
+        font-size: 24px;
+    }
+
+    .donateBtn {
+        font-size: 18px;
+        padding: 0 60px;
+    }
+
+    .navBar .navList .navLink {
+        font-size: 22px;
+    }
+
+    .teamSectionSlider .glide__track {
+        height: 400px;
+    }
+
+    .teamSectionSlider .teamMemberName {
+        font-size: 24px;
+        margin-bottom: 4px;
+    }
+
+    .teamSectionSlider .teamMemberRole {
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+
+    .teamSectionSlider .teamMemberQuote {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .partnerLogoItem {
+        height: 90px;
+        margin: 0 20px 70px
+    }
+
+    .joinUsLink {
+        width: 300px;
+        height: 286px;
+    }
+}
+

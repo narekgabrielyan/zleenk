@@ -33,7 +33,7 @@
     background-repeat: no-repeat;
     background-image: url('../../media/img/sliderImages/screen.png');
     background-size: 100% 100%;
-    border-radius: 20px;
+    border-radius: 32px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -42,6 +42,7 @@
     width: 20%;
     height: 100%;
     position: absolute;
+    pointer-events: none;
     top: 0;
     left: 50%;
     transform: translateX(-50%);

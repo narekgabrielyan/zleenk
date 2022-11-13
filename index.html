@@ -41,7 +41,7 @@
                     <span class="languageOption hy"></span>
                 </div>
             </div>
-            <button class="donateBtn pointer">donate</button>
+            <a class="donateBtn pointer">donate</a>
         </header>
         <div class="downloadBtnWrapper">
             <button class="downloadBtn appstore typeA">
@@ -235,6 +235,9 @@
         gap: 90,
         perView: 5,
         breakpoints: {
+            1680: {
+                perView: 5,
+            },
             1440: {
                 gap: 60,
             },
