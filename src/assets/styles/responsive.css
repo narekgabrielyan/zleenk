@@ -4,8 +4,12 @@
         justify-content: flex-end;
     }
 
-    .navBar .navList .navItem:not(:last-child) {
-        margin-right: 60px;
+    .navBar .navList {
+        margin: 0 -30px;
+    }
+
+    .navBar .navList .navItem {
+        margin: 0 30px;
     }
 
     .navBar .navList .navLink {

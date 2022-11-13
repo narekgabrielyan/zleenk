@@ -3,7 +3,7 @@
     flex-direction: column;
     position: relative;
     height: 100vh;
-    background-image: url(../../media/img/city.png);
+    background-image: url(../../media/img/sections/intro/city.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding-bottom: 134px;
@@ -36,10 +36,11 @@
 .navBar .navList {
     display: flex;
     align-items: center;
+    margin: 0 -36px;
 }
 
-.navBar .navList .navItem:not(:last-child) {
-    margin-right: 72px;
+.navBar .navList .navItem {
+    margin: 0 36px;
 }
 
 .navBar .navList .navLink {
