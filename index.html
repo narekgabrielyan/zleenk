@@ -44,12 +44,12 @@
             <button class="donateBtn pointer">donate</button>
         </header>
         <div class="downloadBtnWrapper">
-            <button class="downloadBtn appstore">
-                <img src="./src/assets/media/img/app-store.png" alt="">
+            <button class="downloadBtn appstore typeA">
+                <img src="./src/assets/media/img/app-store.png" alt="App store">
                 AppStore
             </button>
-            <button class="downloadBtn googleplay">
-                <img src="./src/assets/media/img/google-play.png" alt="">
+            <button class="downloadBtn googleplay typeA">
+                <img src="./src/assets/media/img/google-play.png" alt="Google play">
                 GooglePlay
             </button>
         </div>
@@ -177,6 +177,45 @@
             </a>
         </div>
     </section>
+    <footer class="footerSection">
+        <div class="footerContent">
+            <div class="footerInfo">
+                <div class="footerAbout">
+                    <div class="footerLogo">
+                        <img src="./src/assets/media/img/logo_big.png" alt="Zleenk Logo" >
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed orci id dui sodales scelerisque eu in est. Nulla facilisi. Aliquam erat volutpat.</p>
+                </div>
+                <div class="footerSocialLinks">
+                    <a href="#">
+                        <img src="./src/assets/media/svg/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="#">
+                        <img src="./src/assets/media/svg/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="#">
+                        <img src="./src/assets/media/svg/youtube.svg" alt="Youtube">
+                    </a>
+                </div>
+            </div>
+            <div class="footerDownloadLinks">
+                <h4>download</h4>
+                <div class="downloadBtnWrapper">
+                    <button class="downloadBtn appstore typeB">
+                        <img src="./src/assets/media/img/app-store.png" alt="App store">
+                        AppStore
+                    </button>
+                    <button class="downloadBtn googleplay typeB">
+                        <img src="./src/assets/media/img/google-play.png" alt="Google play">
+                        GooglePlay
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="footNote">
+            Lorem ipsum dolor sit amet, consectetur adipiscing 2022
+        </div>
+    </footer>
 </div>
 <!-- Glide JS -->
 <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
@@ -195,6 +234,18 @@
         focusAt: 1,
         gap: 90,
         perView: 5,
+        breakpoints: {
+            1440: {
+                gap: 60,
+            },
+
+            1280: {
+                gap: 50,
+                perView: 4
+            }
+
+
+        }
     }).mount();
 
     new Splide( '.splide', {

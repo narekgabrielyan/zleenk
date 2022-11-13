@@ -1,0 +1,33 @@
+.downloadBtn {
+    height: 62px;
+    display: flex;
+    align-items: center;
+    font-family: var(--fontSecondary);
+    flex-shrink: 0;
+    font-size: 20px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: 180ms background-color;
+}
+
+.downloadBtn.typeA {
+    border-radius: 15px;
+    color: var(--accentForeground);
+    background-color: var(--accentBackground);
+}
+
+.downloadBtn.typeA:hover {
+    background-color: var(--accentBackgroundHover);
+}
+
+.downloadBtn.typeB {
+    border-radius: 25px;
+    color: #fff;
+    border: 1px solid #D9D9D9;
+}
+
+.downloadBtn img {
+    width: 35px;
+    height: 35px;
+    margin-right: 16px;
+}

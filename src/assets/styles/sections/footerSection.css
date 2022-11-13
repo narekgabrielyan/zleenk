@@ -1,0 +1,119 @@
+.footerSection {
+    padding: 60px 0 92px 0;
+    font-family: var(--fontPrimary);
+    background-color: var(--brandBackground);
+}
+
+.footerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 156px 0 100px;
+    margin-bottom: 40px;
+}
+
+.footerInfo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    margin-right: 230px;
+}
+
+.footerAbout {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 300;
+    color: #DCD9D9;
+}
+
+.footerLogo {
+    width: 220px;
+    height: 50px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.footerLogo img {
+    width: 100%;
+    height: 100%;
+}
+
+.footerSocialLinks {
+    display: flex;
+    align-items: center;
+}
+
+.footerSocialLinks a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.footerSocialLinks a:first-child img {
+    width: 24px;
+    height: 24px;
+}
+
+.footerSocialLinks a:not(:last-child) {
+    position: relative;
+    margin-right: 20px;
+}
+
+.footerSocialLinks a:not(:last-child):after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 25px;
+    background-color: #C4C4C4;
+}
+
+
+.footerSocialLinks a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.footerDownloadLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerDownloadLinks h4 {
+    font-size: 36px;
+    margin-bottom: 88px;
+    font-weight: 300;
+    font-family: var(--fontSecondary);
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.footerDownloadLinks .downloadBtnWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+}
+
+.footNote {
+    width: calc(100% - 350px);
+    margin: auto;
+    text-align: center;
+    font-family: var(--fontPrimary);
+    font-weight: 300;
+    padding-top: 40px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #DCD9D9;
+    border-top: 1px solid #fff;
+}

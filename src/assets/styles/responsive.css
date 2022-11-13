@@ -1,0 +1,45 @@
+/* Desktop Small (1024 - 1440) */
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .navBar .navList .navItem:not(:last-child) {
+        margin-right: 60px;
+    }
+
+    .navBar .navList .navLink {
+        font-size: 16px;
+    }
+
+    .appSectionSlider .glide__slide {
+        border-radius: 8px;
+    }
+
+    .aboutSectionImages {
+        width: 330px;
+        height: 420px;
+    }
+
+    .aboutSectionSlider {
+        padding: 0 80px;
+    }
+
+    .aboutSectionSlider .splide__slide {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .aboutSectionSlider .splide__pagination {
+        right: 30px;
+    }
+
+    .partnerLogoItem {
+        height: 60px;
+    }
+
+    .joinUsSection {
+        padding: 50px 50px 100px;
+    }
+
+    .joinUsLink {
+        width: 235px;
+        height: 224px;
+    }
+}

@@ -42,8 +42,9 @@
     margin-right: 72px;
 }
 
-.navBar .navList .navItem .navLink {
+.navBar .navList .navLink {
     text-transform: capitalize;
+    white-space: nowrap;
     font-size: 18px;
     font-weight: 600;
     font-family: var(--fontPrimary);
@@ -51,7 +52,8 @@
     transition: color 180ms ease-out
 }
 
-.navBar .navList .navItem .navLink:hover {
+.navBar .navList .navLink:hover,
+.navBar .navList .navLink.navLinkActive {
     color: #fff;
 }
 
@@ -121,38 +123,15 @@
     background-color: var(--accentBackgroundHover);
 }
 
-.downloadBtnWrapper {
+.introSection .downloadBtnWrapper {
     display: flex;
     align-items: center;
     margin-top: auto;
     padding-left: 70px;
 }
 
-.downloadBtn {
-    display: flex;
-    align-items: center;
-    font-family: var(--fontSecondary);
-    font-size: 20px;
-    padding: 12px 24px;
-    cursor: pointer;
-    border-radius: 15px;
-    transition: 180ms background-color;
-    color: var(--accentForeground);
-    background-color: var(--accentBackground);
-}
-
-.downloadBtn:first-child {
+.introSection .downloadBtn:first-child {
     margin-right: 50px;
-}
-
-.downloadBtn:hover {
-    background-color: var(--accentBackgroundHover);
-}
-
-.downloadBtn img {
-    width: 35px;
-    height: 35px;
-    margin-right: 16px;
 }
 
 .introStatsWrapper {
