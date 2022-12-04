@@ -1,8 +1,12 @@
 .flexGrow {
-    flex-grow: 1;
-    min-width: 0;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.noScroll {
+  overflow: hidden;
 }
 
 .pointer {
-    cursor: pointer;
+  cursor: pointer;
 }

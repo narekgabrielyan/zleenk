@@ -1,187 +1,192 @@
 .introSection {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    height: 100vh;
-    background-image: url(../../media/img/sections/intro/city.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding-bottom: 134px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  background-image: url(../../media/img/sections/intro/city.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 134px;
 }
 
 .introSection .header {
-    display: flex;
-    align-items: center;
-    padding: 46px 100px 0;
+  display: flex;
+  align-items: center;
+  padding: 46px 100px 0;
 }
 
 .introSection .header .headerLogo {
-    width: 66px;
-    height: 50px;
+  width: 66px;
+  height: 50px;
+  flex-shrink: 0;
 }
 
 .introSection .header .headerLogo img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.introSection .sideBar {
+  display: none;
 }
 
 .navBar {
-    display: flex;
-    justify-content: center;
-    margin: 0 72px;
+  display: flex;
+  justify-content: center;
+  margin: 0 72px;
 }
 
 .navBar .navList {
-    display: flex;
-    align-items: center;
-    margin: 0 -36px;
+  display: flex;
+  align-items: center;
+  margin: 0 -36px;
 }
 
 .navBar .navList .navItem {
-    margin: 0 36px;
+  margin: 0 36px;
 }
 
 .navBar .navList .navLink {
-    text-transform: capitalize;
-    white-space: nowrap;
-    font-size: 18px;
-    font-weight: 600;
-    font-family: var(--fontPrimary);
-    color: #D6D6D6;
-    transition: color 180ms ease-out
+  text-transform: capitalize;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--fontPrimary);
+  color: #d6d6d6;
+  transition: color 180ms ease-out;
 }
 
 .navBar .navList .navLink:hover,
 .navBar .navList .navLink.navLinkActive {
-    color: #fff;
+  color: #fff;
 }
 
 .languageDropdown {
-    display: flex;
-    width: 30px;
-    height: 30px;
-    margin-right: 36px;
-    position: relative;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  margin-right: 36px;
+  position: relative;
 }
 
 .languageDropdown .languageOption {
-    width: 30px;
-    height: 30px;
-    background-image: url('../../media/img/flagSprite.png');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position-x: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../media/img/flagSprite.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position-x: 0;
 }
 
 .languageDropdown .languageOption.hy {
-    background-position-y: 0;
+  background-position-y: 0;
 }
 
 .languageDropdown .languageOption.ru {
-    background-position-y: -30px;
+  background-position-y: -30px;
 }
 
 .languageDropdown .languageOption.en {
-    background-position-y: -60px;
+  background-position-y: -60px;
 }
 
 .languageList {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 100%;
-    left: 0;
-    padding: 8px 0;
-    transform: scaleY(0);
-    transition: transform 180ms ease-out;
-    transform-origin: top;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 100%;
+  left: 0;
+  padding: 8px 0;
+  transform: scaleY(0);
+  transition: transform 180ms ease-out;
+  transform-origin: top;
 }
 
 .languageList .languageOption:not(:last-child) {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .languageDropdown:hover .languageList {
-    transform: scaleY(1);
+  transform: scaleY(1);
 }
 
 .donateBtn {
-    height: 50px;
-    border-radius: 10px;
-    font-weight: 800;
-    font-size: 16px;
-    padding: 0 30px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--fontPrimary);
-    text-transform: uppercase;
-    color: var(--accentForeground);
-    background-color: var(--accentBackground);
-    transition: background-color 180ms ease-out;
+  height: 50px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 16px;
+  padding: 0 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--fontPrimary);
+  text-transform: uppercase;
+  color: var(--accentForeground);
+  background-color: var(--accentBackground);
+  transition: background-color 180ms ease-out;
 }
 
 .donateBtn:hover {
-    background-color: var(--accentBackgroundHover);
+  background-color: var(--accentBackgroundHover);
 }
 
 .introSection .downloadBtnWrapper {
-    display: flex;
-    align-items: center;
-    margin-top: auto;
-    padding-left: 70px;
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  padding: 0 45px;
 }
 
-.introSection .downloadBtn:first-child {
-    margin-right: 50px;
+.introSection .downloadBtn {
+  margin: 0 25px;
 }
 
 .introStatsWrapper {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    border-radius: 10px;
-    backdrop-filter: blur(40px);
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
-    font-family: var(--fontSecondary);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  border-radius: 10px;
+  backdrop-filter: blur(40px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  font-family: var(--fontSecondary);
 }
 
 .statsType {
-    width: 300px;
-    padding: 24px 24px 44px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+  width: 300px;
+  padding: 24px 24px 44px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .statsType:not(:last-child) {
-    position: relative;
+  position: relative;
 }
 
 .statsType:not(:last-child):before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 100%;
-    width: 1px;
-    background-color: #000;
-    height: calc(100% - 32px);
-    transform: translateY(16px);
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 100%;
+  width: 1px;
+  background-color: #000;
+  height: calc(100% - 32px);
+  transform: translateY(16px);
 }
 
 .statsValue {
-    color: #fff;
-    font-size: 48px;
-    margin-bottom: 8px;
+  color: #fff;
+  font-size: 48px;
+  margin-bottom: 8px;
 }
 
 .statsName {
-    color: #000;
-    font-size: 32px;
-    font-weight: 300;
-    text-transform: capitalize;
+  color: #000;
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: capitalize;
 }

@@ -1,261 +1,408 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="./src/assets/styles/all.css">
-</head>
-<body>
-<div id="root">
-    <section class="introSection" id="introSection">
+    <link rel="stylesheet" href="./src/assets/styles/all.css" />
+  </head>
+  <body>
+    <div id="root">
+      <section class="introSection" id="introSection">
         <header class="header">
-            <div class="headerLogo">
-                <img src="src/assets/media/svg/logo_sm.svg" alt="Zleenk Logo">
+          <div class="headerLogo">
+            <img src="src/assets/media/svg/logo_sm.svg" alt="Zleenk Logo" />
+          </div>
+          <nav class="navBar flexGrow">
+            <ul class="navList">
+              <li class="navItem">
+                <a href="#appSection" class="navLink">app</a>
+              </li>
+              <li class="navItem">
+                <a href="#teamSection" class="navLink">team</a>
+              </li>
+              <li class="navItem">
+                <a href="#partnerSection" class="navLink">partners</a>
+              </li>
+              <li class="navItem">
+                <a href="#joinUsSection" class="navLink">join</a>
+              </li>
+              <li class="navItem">
+                <a href="#aboutSection" class="navLink">about us</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="languageDropdown pointer">
+            <span class="selectedLanguage languageOption en"></span>
+            <div class="languageList">
+              <span class="languageOption ru"></span>
+              <span class="languageOption hy"></span>
             </div>
-            <nav class="navBar flexGrow">
-                <ul class="navList">
-                    <li class="navItem">
-                        <a href="#appSection" class="navLink">app</a>
-                    </li>
-                    <li class="navItem">
-                        <a href="#teamSection" class="navLink">team</a>
-                    </li>
-                    <li class="navItem">
-                        <a href="#partnerSection" class="navLink">partners</a>
-                    </li>
-                    <li class="navItem">
-                        <a href="#joinUsSection" class="navLink">join</a>
-                    </li>
-                    <li class="navItem">
-                        <a href="#aboutSection" class="navLink">about us</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="languageDropdown pointer">
-                <span class="selectedLanguage languageOption en"></span>
-                <div class="languageList">
-                    <span class="languageOption ru"></span>
-                    <span class="languageOption hy"></span>
-                </div>
-            </div>
-            <a class="donateBtn pointer">donate</a>
+          </div>
+          <a class="donateBtn pointer">donate</a>
+          <button
+            id="toggleBtn"
+            class="iconFont-hamburger hamburgerMenu"
+            onclick="onSideBarToggleHandler()"
+          ></button>
         </header>
         <div class="downloadBtnWrapper">
-            <button class="downloadBtn appstore typeA">
-                <img src="./src/assets/media/img/app-store.png" alt="App store">
-                AppStore
-            </button>
-            <button class="downloadBtn googleplay typeA">
-                <img src="./src/assets/media/img/google-play.png" alt="Google play">
-                GooglePlay
-            </button>
+          <button class="downloadBtn appstore typeA">
+            <img src="./src/assets/media/img/app-store.png" alt="App store" />
+            AppStore
+          </button>
+          <button class="downloadBtn googleplay typeA">
+            <img
+              src="./src/assets/media/img/google-play.png"
+              alt="Google play"
+            />
+            GooglePlay
+          </button>
         </div>
         <div class="introStatsWrapper">
-            <div class="statsType">
-                <span class="statsValue">1500</span>
-                <span class="statsName">users</span>
-            </div>
-            <div class="statsType">
-                <span class="statsValue">1500</span>
-                <span class="statsName">live lessons</span>
-            </div>
-            <div class="statsType">
-                <span class="statsValue">1500</span>
-                <span class="statsName">video courses</span>
-            </div>
+          <div class="statsType">
+            <span class="statsValue">1500</span>
+            <span class="statsName">users</span>
+          </div>
+          <div class="statsType">
+            <span class="statsValue">1500</span>
+            <span class="statsName">live lessons</span>
+          </div>
+          <div class="statsType">
+            <span class="statsValue">1500</span>
+            <span class="statsName">video courses</span>
+          </div>
         </div>
-    </section>
-    <section class="appSection" id="appSection">
+        <div id="sideBar" class="sideBar">
+          <div class="sideBarHeader">
+            <div class="sideBarLogo">
+              <img
+                src="src/assets/media/img/sections/intro/logo_light.png"
+                alt="Zleenk Logo"
+              />
+            </div>
+            <div class="languageDropdown pointer">
+              <span class="selectedLanguage languageOption en"></span>
+              <div class="languageList">
+                <span class="languageOption ru"></span>
+                <span class="languageOption hy"></span>
+              </div>
+            </div>
+          </div>
+          <nav id="sideBarNav" class="sideBarNav">
+            <a href="#appSection" class="sideBarNavLink">App</a>
+            <a href="#aboutSection" class="sideBarNavLink">About us</a>
+            <a href="#teamSection" class="sideBarNavLink">Team</a>
+            <a href="#partnerSection" class="sideBarNavLink">Partners</a>
+            <a href="#joinUsSection" class="sideBarNavLink">Join</a>
+            <a class="donateBtn pointer">donate</a>
+          </nav>
+        </div>
+      </section>
+      <section class="appSection" id="appSection">
         <div class="appSectionHeading sectionHeading">App</div>
         <div class="glide appSectionSlider">
-            <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                    <li class="glide__slide"></li>
-                    <li class="glide__slide"></li>
-                    <li class="glide__slide"></li>
-                    <li class="glide__slide"></li>
-                    <li class="glide__slide"></li>
-                </ul>
-            </div>
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide"></li>
+              <li class="glide__slide"></li>
+              <li class="glide__slide"></li>
+              <li class="glide__slide"></li>
+              <li class="glide__slide"></li>
+            </ul>
+          </div>
         </div>
-    </section>
-    <section class="aboutSection" id="aboutSection">
+      </section>
+      <section class="aboutSection" id="aboutSection">
         <div class="aboutSectionHeading sectionHeading">About Us</div>
         <div class="aboutSectionContent">
-            <div class="aboutSectionImages">
-                <div class="aboutImg"></div>
-                <div class="aboutImg"></div>
-                <div class="aboutImg"></div>
+          <div class="aboutSectionImages">
+            <div class="aboutImg"></div>
+            <div class="aboutImg"></div>
+            <div class="aboutImg"></div>
+          </div>
+          <div class="aboutSectionSliderWrapper">
+            <div class="aboutSectionSliderHeading">Story</div>
+            <div
+              class="aboutSectionSlider splide"
+              role="group"
+              aria-label="Splide Basic HTML Example"
+            >
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    1 Zleenk was founded started its activity in June 2021 in
+                    order to enable every schoolchild to self-educate,
+                    self-develop and self-discover. Today, a number of talented
+                    schoolchildren sometimes do not have the opportunity to
+                    develop their talent, skills, motivation due to various
+                    problems, which may include family, school, friends,
+                    environment. We have come to make education interesting,
+                    accessible and desirable.
+                  </li>
+                  <li class="splide__slide">
+                    2 Zleenk was founded started its activity in June 2021 in
+                    order to enable every schoolchild to self-educate,
+                    self-develop and self-discover. Today, a number of talented
+                    schoolchildren sometimes do not have the opportunity to
+                    develop their talent, skills, motivation due to various
+                    problems, which may include family, school, friends,
+                    environment. We have come to make education interesting,
+                    accessible and desirable.
+                  </li>
+                  <li class="splide__slide">
+                    3 Zleenk was founded started its activity in June 2021 in
+                    order to enable every schoolchild to self-educate,
+                    self-develop and self-discover. Today, a number of talented
+                    schoolchildren sometimes do not have the opportunity to
+                    develop their talent, skills, motivation due to various
+                    problems, which may include family, school, friends,
+                    environment. We have come to make education interesting,
+                    accessible and desirable.
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="aboutSectionSliderWrapper">
-                <div class="aboutSectionSliderHeading">
-                    Story
-                </div>
-                <div class="aboutSectionSlider splide" role="group" aria-label="Splide Basic HTML Example">
-                    <div class="splide__track">
-                          <ul class="splide__list">
-                              <li class="splide__slide">1 Zleenk was founded started its activity in June 2021 in order to enable every schoolchild to self-educate, self-develop and self-discover.
-                                Today, a number of talented schoolchildren sometimes do not have the opportunity to develop their talent, skills, motivation due to various problems, which may include family, school, friends, environment. We have come to make education interesting, accessible and desirable.</li>
-                              <li class="splide__slide">2 Zleenk was founded started its activity in June 2021 in order to enable every schoolchild to self-educate, self-develop and self-discover.
-                                Today, a number of talented schoolchildren sometimes do not have the opportunity to develop their talent, skills, motivation due to various problems, which may include family, school, friends, environment. We have come to make education interesting, accessible and desirable.</li>
-                              <li class="splide__slide">3 Zleenk was founded started its activity in June 2021 in order to enable every schoolchild to self-educate, self-develop and self-discover.
-                                Today, a number of talented schoolchildren sometimes do not have the opportunity to develop their talent, skills, motivation due to various problems, which may include family, school, friends, environment. We have come to make education interesting, accessible and desirable.</li>
-                          </ul>
-                    </div>
-                  </div>
-            </div>
+          </div>
         </div>
-    </section>
-    <section class="teamSection" id="teamSection">
+      </section>
+      <section class="teamSection" id="teamSection">
         <div class="teamSectionHeading sectionHeading">Team</div>
         <div class="glide teamSectionSlider">
-            <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                    <li class="glide__slide">
-                        <div class="slideContentWrapper">
-                            <div class="slideContent">
-                                <span class="teamMemberName">Diana Ghabuzyan</span>
-                                <span class="teamMemberRole">co founder</span>
-                                <span class="teamMemberQuote">“Everyone is a genius, but if you judge a fish by ability to climb a tree, it will live it’s  whole life believing that is stupid”</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="glide__slide"></li>
-                    <li class="glide__slide"></li>
-                    <li class="glide__slide"></li>
-                    <li class="glide__slide"></li>
-                </ul>
-            </div>
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="slideContentWrapper">
+                  <div class="slideContent">
+                    <span class="teamMemberName">Diana Ghabuzyan</span>
+                    <span class="teamMemberRole">co founder</span>
+                    <span class="teamMemberQuote"
+                      >“Everyone is a genius, but if you judge a fish by ability
+                      to climb a tree, it will live it’s whole life believing
+                      that is stupid”</span
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide"></li>
+              <li class="glide__slide"></li>
+              <li class="glide__slide"></li>
+              <li class="glide__slide"></li>
+            </ul>
+          </div>
         </div>
-    </section>
-    <section class="partnerSection" id="partnerSection">
+      </section>
+      <section class="partnerSection" id="partnerSection">
         <div class="partnerectionHeading sectionHeading">Our partners</div>
         <div class="partnerLogosWrapper">
-            <div class="partnerLogoItem">
-                <img src="./src/assets/media/img/partners/ayb.png" alt="Ayb" title="Ayb">
-            </div>
-            <div class="partnerLogoItem">
-                <img src="./src/assets/media/img/partners/arloopa.png" alt="Arloopa" title="Arloopa">
-            </div>
-            <div class="partnerLogoItem">
-                <img src="./src/assets/media/img/partners/burnwe.png" alt="Burnwe" title="Burnwe">
-            </div>
-            <div class="partnerLogoItem">
-                <img src="./src/assets/media/img/partners/fast.png" alt="Fast" title="Fast">
-            </div>
-            <div class="partnerLogoItem">
-                <img src="./src/assets/media/img/partners/parenting_school.png" alt="Parenting School" title="Parenting School">
-            </div>
-            <div class="partnerLogoItem">
-                <img src="./src/assets/media/img/partners/doping.png" alt="Doping" title="Doping">
-            </div>
-            <div class="partnerLogoItem">
-                <img src="./src/assets/media/img/partners/arides.png" alt="Arides" title="Arides">
-            </div>
-            <div class="partnerLogoItem">
-                <img src="./src/assets/media/img/partners/unicef.png" alt="Unicef" title="Unicef">
-            </div>
+          <div class="partnerLogoItem">
+            <img
+              src="./src/assets/media/img/partners/ayb.png"
+              alt="Ayb"
+              title="Ayb"
+            />
+          </div>
+          <div class="partnerLogoItem">
+            <img
+              src="./src/assets/media/img/partners/arloopa.png"
+              alt="Arloopa"
+              title="Arloopa"
+            />
+          </div>
+          <div class="partnerLogoItem">
+            <img
+              src="./src/assets/media/img/partners/burnwe.png"
+              alt="Burnwe"
+              title="Burnwe"
+            />
+          </div>
+          <div class="partnerLogoItem">
+            <img
+              src="./src/assets/media/img/partners/fast.png"
+              alt="Fast"
+              title="Fast"
+            />
+          </div>
+          <div class="partnerLogoItem">
+            <img
+              src="./src/assets/media/img/partners/parenting_school.png"
+              alt="Parenting School"
+              title="Parenting School"
+            />
+          </div>
+          <div class="partnerLogoItem">
+            <img
+              src="./src/assets/media/img/partners/doping.png"
+              alt="Doping"
+              title="Doping"
+            />
+          </div>
+          <div class="partnerLogoItem">
+            <img
+              src="./src/assets/media/img/partners/arides.png"
+              alt="Arides"
+              title="Arides"
+            />
+          </div>
+          <div class="partnerLogoItem">
+            <img
+              src="./src/assets/media/img/partners/unicef.png"
+              alt="Unicef"
+              title="Unicef"
+            />
+          </div>
         </div>
-    </section>
-    <section class="joinUsSection" id="joinUsSection">
+      </section>
+      <section class="joinUsSection" id="joinUsSection">
         <div class="joinUsSectionHeading sectionHeading">Join us</div>
         <div class="joinUsLinksWrapper">
-            <a href="#" class="joinUsLink">
-                <img src="./src/assets/media/svg/volunteer.svg" alt="Volunteer Icon" title="Volunteer">
-                <span>volunteer</span>
-            </a>
-            <a href="#" class="joinUsLink">
-                <img src="./src/assets/media/svg/speaker.svg" alt="Speaker Icon" title="Speaker">
-                <span>speaker</span>
-            </a>
-            <a href="#" class="joinUsLink">
-                <img src="./src/assets/media/svg/company.svg" alt="Company Icon" title="Company">
-                <span>company</span>
-            </a>
+          <a href="#" class="joinUsLink">
+            <img
+              src="./src/assets/media/svg/volunteer.svg"
+              alt="Volunteer Icon"
+              title="Volunteer"
+            />
+            <span>volunteer</span>
+          </a>
+          <a href="#" class="joinUsLink">
+            <img
+              src="./src/assets/media/svg/speaker.svg"
+              alt="Speaker Icon"
+              title="Speaker"
+            />
+            <span>speaker</span>
+          </a>
+          <a href="#" class="joinUsLink">
+            <img
+              src="./src/assets/media/svg/company.svg"
+              alt="Company Icon"
+              title="Company"
+            />
+            <span>company</span>
+          </a>
         </div>
-    </section>
-    <footer class="footerSection">
+      </section>
+      <footer class="footerSection">
         <div class="footerContent">
-            <div class="footerInfo">
-                <div class="footerAbout">
-                    <div class="footerLogo">
-                        <img src="./src/assets/media/img/logo_big.png" alt="Zleenk Logo" >
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed orci id dui sodales scelerisque eu in est. Nulla facilisi. Aliquam erat volutpat.</p>
-                </div>
-                <div class="footerSocialLinks">
-                    <a href="#">
-                        <img src="./src/assets/media/svg/instagram.svg" alt="Instagram">
-                    </a>
-                    <a href="#">
-                        <img src="./src/assets/media/svg/facebook.svg" alt="Facebook">
-                    </a>
-                    <a href="#">
-                        <img src="./src/assets/media/svg/youtube.svg" alt="Youtube">
-                    </a>
-                </div>
+          <div class="footerInfo">
+            <div class="footerAbout">
+              <div class="footerLogo">
+                <img
+                  src="./src/assets/media/img/logo_big.png"
+                  alt="Zleenk Logo"
+                />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                sed orci id dui sodales scelerisque eu in est. Nulla facilisi.
+                Aliquam erat volutpat.
+              </p>
             </div>
-            <div class="footerDownloadLinks">
-                <h4>download</h4>
-                <div class="downloadBtnWrapper">
-                    <button class="downloadBtn appstore typeB">
-                        <img src="./src/assets/media/img/app-store.png" alt="App store">
-                        AppStore
-                    </button>
-                    <button class="downloadBtn googleplay typeB">
-                        <img src="./src/assets/media/img/google-play.png" alt="Google play">
-                        GooglePlay
-                    </button>
-                </div>
+            <div class="footerSocialLinks">
+              <a href="#">
+                <img
+                  src="./src/assets/media/svg/instagram.svg"
+                  alt="Instagram"
+                />
+              </a>
+              <a href="#">
+                <img src="./src/assets/media/svg/facebook.svg" alt="Facebook" />
+              </a>
+              <a href="#">
+                <img src="./src/assets/media/svg/youtube.svg" alt="Youtube" />
+              </a>
             </div>
+          </div>
+          <div class="footerDownloadLinks">
+            <h4>download</h4>
+            <div class="downloadBtnWrapper">
+              <button class="downloadBtn appstore typeB">
+                <img
+                  src="./src/assets/media/img/app-store.png"
+                  alt="App store"
+                />
+                AppStore
+              </button>
+              <button class="downloadBtn googleplay typeB">
+                <img
+                  src="./src/assets/media/img/google-play.png"
+                  alt="Google play"
+                />
+                GooglePlay
+              </button>
+            </div>
+          </div>
         </div>
         <div class="footNote">
-            Lorem ipsum dolor sit amet, consectetur adipiscing 2022
+          Lorem ipsum dolor sit amet, consectetur adipiscing 2022
         </div>
-    </footer>
-</div>
-<!-- Glide JS -->
-<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-<!-- Splide JS -->
-<script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
-<script>
-    new Glide('.appSectionSlider', {
-        type: 'carousel',
-        focusAt: 'center',
+      </footer>
+    </div>
+    <!-- Glide JS -->
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <!-- Splide JS -->
+    <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script>
+      new Glide(".appSectionSlider", {
+        type: "carousel",
+        focusAt: "center",
         gap: 22,
         perView: 5,
-    }).mount();
+        breakpoints: {
+          1024: {
+            gap: 16,
+          },
+          768: {
+            gap: 8,
+          },
+        },
+      }).mount();
 
-    new Glide('.teamSectionSlider', {
-        type: 'carousel',
+      new Glide(".teamSectionSlider", {
+        type: "carousel",
         focusAt: 1,
         gap: 90,
         perView: 5,
         breakpoints: {
-            1680: {
-                perView: 5,
-            },
-            1440: {
-                gap: 60,
-            },
-            1280: {
-                gap: 50,
-                perView: 4
-            }
-        }
-    }).mount();
+          1680: {
+            perView: 5,
+          },
+          1440: {
+            gap: 60,
+          },
+          1280: {
+            gap: 50,
+            perView: 4,
+          },
+        },
+      }).mount();
 
-    new Splide( '.splide', {
-        type   : 'loop',
+      new Splide(".splide", {
+        type: "loop",
         perPage: 1,
-        direction: 'ttb',
+        direction: "ttb",
         pagination: true,
         arrows: false,
         height: 396,
-    }).mount();
-</script>
-</body>
+      }).mount();
+
+      const onSideBarToggleHandler = () => {
+        document.getElementById("sideBar").classList.toggle("sideBarActive");
+        document.getElementById("toggleBtn").classList.toggle("active");
+        document.body.scrollIntoView();
+        document.body.classList.toggle("noScroll");
+      };
+
+      const sideBarNav = document.getElementById("sideBarNav");
+      sideBarNav
+        .querySelectorAll("a")
+        .forEach((link) =>
+          link.addEventListener("click", onSideBarToggleHandler)
+        );
+    </script>
+  </body>
 </html>
