@@ -1,90 +1,89 @@
 .aboutSection {
-    padding: 50px 100px;
+  padding: 50px 100px;
 }
 
 .aboutSectionContent {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .aboutSectionImages {
-    position: relative;
-    width: 400px;
-    height: 510px;
-    flex-shrink: 0;
+  position: relative;
+  width: 400px;
+  height: 510px;
+  margin: 0 10px;
+  flex-shrink: 0;
 }
 
 .aboutImg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    inset: 0;
-    border-radius: 6px;
-    transform-origin: bottom right;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  border-radius: 6px;
+  transform-origin: bottom right;
 }
 
 .aboutImg:first-child {
-    background-color: rgba(37, 211, 102, 0.7);
-    transform: rotate(6deg);
+  background-color: rgba(37, 211, 102, 0.7);
+  transform: rotate(6deg);
 }
 
 .aboutImg:nth-child(2) {
-    background-color: rgba(122, 84, 241, 0.8);
-    transform: rotate(3deg);
+  background-color: rgba(122, 84, 241, 0.8);
+  transform: rotate(3deg);
 }
 
 .aboutImg:last-child {
-    background-color: #C4C4C4;
+  background-color: #c4c4c4;
 }
 
 .aboutSectionSliderWrapper {
-    flex: 1;
-    min-width: 0;
+  flex: 1;
+  min-width: 0;
+  margin: 0 10px;
 }
 
 .aboutSectionSliderHeading {
-    font-family: var(--fontSecondary);
-    font-weight: 300;
-    font-size: 48px;
-    text-align: center;
+  font-family: var(--fontSecondary);
+  font-weight: 300;
+  font-size: 48px;
+  text-align: center;
 }
 
 .aboutSectionSlider {
-    padding: 0 100px;
+  padding: 0 100px;
 }
 
 .aboutSectionSlider .splide__slide {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 300;
-    font-family: var(--fontPrimary);
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 300;
+  font-family: var(--fontPrimary);
 }
 
 .aboutSectionSlider .splide__pagination {
-    right: 40px;
-    width: 20px;
+  right: 40px;
 }
 
 .aboutSectionSlider .splide__pagination li {
-    display: flex;
-    width: 20px;
-    height: 20px;
-    margin: 8px 0;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  margin: 8px 0;
 }
 
-
 .aboutSectionSlider .splide__pagination__page {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    margin: 0;
-    background-color: #c4c4c4;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  margin: 0;
+  background-color: #c4c4c4;
 }
 
 .aboutSectionSlider .splide__pagination__page.is-active {
-    transform: none;
-    background-color: var(--accentBackground);
+  transform: none;
+  background-color: var(--accentBackground);
 }
