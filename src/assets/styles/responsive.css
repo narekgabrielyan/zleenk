@@ -214,6 +214,7 @@
     display: flex;
     flex-direction: column;
     position: fixed;
+    overflow: auto;
     padding: 60px 22px;
     z-index: 10;
     width: 100%;
@@ -241,11 +242,12 @@
 
   .introSection .sideBarNav {
     flex-grow: 1;
+    flex-shrink: 0;
     min-height: 0;
     display: grid;
     grid-auto-flow: row;
-    grid-gap: 70px;
-    padding: 70px 0;
+    grid-gap: 60px;
+    padding: 60px 0;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -267,7 +269,7 @@
 
   .appSection {
     margin: 0;
-    padding: 100px 0;
+    padding: 90px 0;
   }
 
   .appSectionSlider {
@@ -281,6 +283,127 @@
   .appSectionSlider .glide__slide {
     border-radius: 18px;
   }
+
+  .aboutSection {
+    padding: 20px 0;
+  }
+
+  .aboutSectionImages {
+    width: 280px;
+    height: 370px;
+    margin: 0 40px;
+  }
+
+  .aboutSectionSliderHeading {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  .aboutSectionSlider {
+    padding: 0 40px;
+  }
+
+  .aboutSectionSlider .splide__slide {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .aboutSectionSlider .splide__pagination {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    top: auto;
+    bottom: -40px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .aboutSectionSlider .splide__pagination li {
+    flex-shrink: 0;
+    margin: 0 8px;
+  }
+
+  .teamSectionHeading {
+    margin-bottom: 46px;
+  }
+
+  .partnerSection {
+    padding: 40px 0;
+  }
+
+  .partnerSectionHeading {
+    margin-bottom: 36px;
+  }
+
+  .partnerLogosWrapper {
+    margin: 0;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .partnerLogoItem {
+    height: 60px;
+    margin: 0 40px;
+    flex-shrink: 0;
+  }
+
+  .joinUsSectionHeading {
+    margin-bottom: 36px;
+  }
+
+  .joinUsSection {
+    padding: 50px;
+  }
+
+  .joinUsLink {
+    width: 200px;
+    height: 200px;
+  }
+
+  .footerSection {
+    padding: 60px 0;
+  }
+
+  .footerContent {
+    flex-direction: column;
+    padding: 0 100px;
+  }
+
+  .footerInfo {
+    flex-direction: row;
+    margin: 0 -20px 36px;
+  }
+
+  .footerAbout {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 20px;
+  }
+
+  .footerLogo {
+    width: 134px;
+    height: 30px;
+  }
+
+  .footerSocialLinks {
+    margin: 0 20px;
+  }
+
+  .footerDownloadLinks h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .footerDownloadLinks .downloadBtnWrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+  }
+
+  .footNote {
+    width: calc(100% - 200px);
+    font-size: 12px;
+  }
 }
 /* Mobile Only */
 @media only screen and (max-width: 768px) {
@@ -289,5 +412,54 @@
   }
   .appSectionSlider .glide__slide {
     border-radius: 12px;
+  }
+
+  .aboutSectionSlider .splide__pagination {
+    bottom: -20px;
+  }
+
+  .aboutSectionSlider .splide__pagination li {
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+  }
+
+  .aboutSectionImages {
+    width: 136px;
+    height: 200px;
+    margin: 0 20px;
+  }
+
+  .aboutSectionSliderHeading {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .aboutSectionSlider {
+    padding: 0 20px;
+    margin-bottom: 10px;
+  }
+
+  .aboutSectionSlider .splide__slide {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .teamSection {
+    padding: 70px 0;
+  }
+
+  .footerSection {
+    padding: 40px 0;
+  }
+
+  .footerContent {
+    padding: 0 22px;
+  }
+
+  .footNote {
+    width: calc(100% - 44px);
+    padding-top: 40px;
+    line-height: 1;
   }
 }

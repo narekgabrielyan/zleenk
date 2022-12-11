@@ -197,7 +197,7 @@
         </div>
       </section>
       <section class="partnerSection" id="partnerSection">
-        <div class="partnerectionHeading sectionHeading">Our partners</div>
+        <div class="partnerSectionHeading sectionHeading">Our partners</div>
         <div class="partnerLogosWrapper">
           <div class="partnerLogoItem">
             <img
@@ -378,16 +378,39 @@
             gap: 50,
             perView: 4,
           },
+          1024: {
+            gap: 40,
+            perView: 3,
+          },
+          768: {
+            gap: 20,
+            perView: 3,
+          },
+          500: {
+            gap: 20,
+            perView: 2,
+          },
         },
       }).mount();
 
-      new Splide(".splide", {
+      new Splide(".aboutSectionSlider", {
         type: "loop",
         perPage: 1,
         direction: "ttb",
         pagination: true,
         arrows: false,
         height: 396,
+        breakpoints: {
+          1024: {
+            direction: "ltr",
+          },
+          768: {
+            height: 220,
+          },
+          500: {
+            height: 300,
+          },
+        },
       }).mount();
 
       const onSideBarToggleHandler = () => {
